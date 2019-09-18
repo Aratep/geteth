@@ -1,0 +1,187 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+	@font-face
+		font-family: $font-family
+		font-weight: $weight
+		font-style: $style
+
+		@if $asset-pipeline == true
+			src: font-url('#{$file-path}.eot')
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
+		@else
+			src: url('#{$file-path}.eot')
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+
++font-face("gotham", "./GothamPro/GothamPro-Light", 300)
++font-face("gotham", "./GothamPro/GothamPro", 400)
++font-face("gotham", "./GothamPro/GothamPro-Bold", bold)
++font-face("gotham", "./GothamPro/GothamPro-Black", 900)
+
+body
+	font-weight: 300
+	line-height: 1.5
+	font-size: 16px
+	font-family: "gotham", sans-serif
+	padding: 0
+	min-height: 100vh
+	margin: 0
+	color: #fff
+	position: relative
+
+.app-container
+	a
+		font-weight: 300
+		color: #ffffff
+		text-decoration: none
+	.background
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		overflow: hidden
+		&:before
+			transition: all .3s ease
+			position: absolute
+			top: 0
+			right: 0
+			width: 75%
+			height: 100%
+			background-repeat: no-repeat
+			background-image: url('assets/background.png')
+			content: ""
+			z-index: -1
+		&:after
+			transition: all .3s ease
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			min-height: 2300px
+			content: ""
+			z-index: -2
+			background: linear-gradient(#0D0124, #120A47)
+
+	&.light
+		.header-container .exchange-games-toggler
+			.nav
+				color: #23477F
+				&.active
+					color: #ffffff
+			.circle-container .circle
+				background-color: #52FFB9
+				box-shadow: 0 0 10px 1.5px #52FFB9
+		.background
+			&:before
+				background-image: url('assets/background-light.png')
+			&:after
+				background: linear-gradient(#552CC9, #663DDA)
+		.button
+			font-weight: bold
+			color: #383838
+			&:before
+				background: #FFCC1A
+		.statistic-item-wrap
+			background: linear-gradient(#14B3BC, #2B2E9A)
+		footer
+			.container
+				&:after
+					background-color: #7F61D4
+			a:hover
+				color: yellow
+.button
+	font-family: "gotham", sans-serif
+	border: none
+	outline: none
+	color: #fff
+	font-size: 18px
+	text-transform: capitalize
+	text-align: center
+	font-weight: 400
+	border-radius: 10em
+	padding: 13px 50px
+	cursor: pointer
+	transition: all .3s ease
+	position: relative
+	overflow: hidden
+	&:before
+		transition: all .3s ease
+		z-index: -1
+		position: absolute
+		top: -10%
+		left: -10%
+		width: 120%
+		height: 120%
+		background-image: linear-gradient(to right, #F70CA0, #F76B1C)
+		content: ""
+	&:hover
+		box-shadow: 0 0 10px 1.5px #F75E2D
+
+.Toastify__toast-container--bottom-left
+	bottom: -5px !important
+
+
+.Toastify__toast.Toastify__toast--default
+	margin: 0
+	padding: 10px
+	max-width: 300px
+	background: linear-gradient(to right, #F71790, #F76129)
+	opacity: 0.8
+	color: #fff
+	border-radius: 10px
+	a
+		font-weight: bold
+		color: #42389D
+	button
+		margin-top: 10px
+		padding: 10px
+		width: 100%
+		background-color: transparent
+		border-radius: 10em
+		border: 1px solid #fff
+		color: #ffffff
+
+.flying-form
+	top: 50%
+	left: 50%
+	width: 80%
+	max-width: 600px
+	padding: 50px 30px 30px
+	z-index: 100
+	background-color: #E8E9F0
+	color: #353535
+	border-radius: 10px
+	transform: translate(-50%, -50%)
+	position: fixed
+	box-shadow: 0 0 10px 1.5px rgba(#000, .4)
+	@media only screen and (max-width: 576px)
+		width: calc(100% - 30px) !important
+	.close
+		transition: all .3s ease
+		cursor: pointer
+		position: absolute
+		top: 0
+		right: 15px
+		line-height: 1
+		padding: 20px
+		&:hover
+			color: red
+	.button
+		z-index: 101
+	> *
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+	.button
+		&:hover
+			box-shadow: 0 0 10px 1.5px #16CC3B
+		&:before
+			background-image: linear-gradient(to right, #16CC3B, #0CF033)
+		&.disabled
+			&:hover
+				box-shadow: none
+			&:before
+				opacity: .3
+	input.invalid
+		border-color: red

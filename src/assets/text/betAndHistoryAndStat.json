@@ -1,0 +1,74 @@
+{
+  "eng": {
+    "bet": {
+      "description": "Your bet",
+      "button": "Make a bet"
+    },
+    "labels": {
+      "bet": "bet amount",
+      "payoutOnWin": "payout on win",
+      "payout": "payout",
+      "winChance": "win chance"
+    },
+    "history": {
+      "header": {
+        "player": "player",
+        "time": "time",
+        "rollUnder": "roll under",
+        "payout": "payout",
+        "bet": "bet"
+      },
+      "all": "all bets",
+      "my": "my bets"
+    },
+    "chances": {
+      "title": "Game statistics",
+      "keys": {
+        "result": "Result",
+        "winChance": "Chance",
+        "seqResult": "Max sequence",
+        "biggestBet": "Max bet"
+      }
+    },
+    "payouts": {
+      "commission": "Casino fee",
+      "jackpot": "Jackpot fee"
+    }
+  },
+  "rus": {
+    "labels": {
+      "bet": "ставка",
+      "payoutOnWin": "выплата",
+      "payout": "коэффициент",
+      "winChance": "шанс"
+    },
+    "history": {
+      "header": {
+        "player": "игрок",
+        "time": "время",
+        "rollUnder": "шанс",
+        "payout": "выигрыш",
+        "bet": "ставка"
+      },
+      "all": "все ставки",
+      "my": "мои ставки"
+    },
+    "bet": {
+      "description": "Ваша ставка",
+      "button": "Сделать ставку"
+    },
+    "chances": {
+      "title": "Статистика игры",
+      "keys": {
+        "result": "Всего",
+        "winChance": "Выиграли",
+        "seqResult": "Подряд",
+        "biggestBet": "Макс. ставка"
+      }
+    },
+    "payouts": {
+      "commission": "Комиссия казино",
+      "jackpot": "В банк лотереи"
+    }
+  }
+}

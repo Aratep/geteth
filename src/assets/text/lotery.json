@@ -1,0 +1,74 @@
+{
+  "eng": {
+    "navigation": {
+      "pot": "lottery pot",
+      "prizes": "prizes",
+      "buy": "buy tickets",
+      "history": "history"
+    },
+    "ticketsInfo": {
+      "yourTickets": "your tickets",
+      "winChance": "win chance",
+      "totalTickets": "total tickets"
+    },
+    "pot": {
+      "ticketDescription": ["round", "lottery pot"],
+      "howToPlay": "how to play?"
+    },
+    "prizes": {
+      "prize": "prize"
+    },
+    "buy": {
+      "tickets": "tickets",
+      "yourTokens": "your tokens",
+      "buyTickets": "buy tickets"
+    },
+    "history": {
+      "header": {
+        "user": "user",
+        "winPrize": "win prize",
+        "ticketNumber": "ticket number",
+        "ownedRatio": "owned ratio"
+      },
+      "winner": "winner",
+      "round": ["round", "lottery"],
+      "prize": "prize"
+    }
+  },
+  "rus": {
+    "navigation": {
+      "pot": "джекпот",
+      "prizes": "призы",
+      "buy": "купить билеты",
+      "history": "история"
+    },
+    "ticketsInfo": {
+      "yourTickets": "ваши билеты",
+      "winChance": "шанс выиграть",
+      "totalTickets": "всего билетов в игре"
+    },
+    "pot": {
+      "ticketDescription": ["Тираж", "лотереи"],
+      "howToPlay": "как играть?"
+    },
+    "prizes": {
+      "prize": "приз"
+    },
+    "buy": {
+      "tickets": "билеты",
+      "yourTokens": "ваши токены",
+      "buyTickets": "купить билеты"
+    },
+    "history": {
+      "header": {
+        "user": "игрок",
+        "winPrize": "выигрыш",
+        "ticketNumber": "билеты",
+        "ownedRatio": "доля"
+      },
+      "winner": "победитель",
+      "round": ["тираж", "лотереи"],
+      "prize": "приз"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "ogTitle": {
+    "eng": "GetETH — casino / exchange on the Ethereum smart contract",
+    "rus": "GetETH — казино / биржа на базе смарт-контракта Ethereum"
+  },
+  "ogDescription": {
+    "eng": "Smart Casino GetETH is a completely decentralized system that provides the fairest and transparent system for the casino industry, and also provides a low withdrawal commission.  ► GetETH is an investment medium-risk cryptocurrency exchange based on the Ethereum smart contract!!",
+    "rus": "Smart Casino GetETH is a completely decentralized system that provides the fairest and transparent system for the casino industry, and also provides a low withdrawal commission.  ► GetETH is an investment medium-risk cryptocurrency exchange based on the Ethereum smart contract!!"
+  },
+  "titles": {
+    "eng": {
+      "index": "GetETH — Medium-risk Cryptocurrency Exchange on Smart Contract Ethereum",
+      "casino": "GetETH — Smart Contract Casino & Ethereum Сrypto Casino",
+      "getcoin": "Getcoin Game | GetETH",
+      "getroll": "Getroll Game | GetETH",
+      "get2dice": "Get2dice Game | GetETH",
+      "getdice": "Getdice Game | GetETH",
+      "disclaimer": "Disclaimer | GetETH",
+      "lottery": "Cryptocurrency Lottery | GetETH",
+      "faq": "FAQ | GetETH",
+      "risks": "What about risks? | GetETH",
+      "warranties": "Warranties for participants | GetETH",
+      "404": "Page not found | GetETH"
+    },
+    "rus": {
+      "index": "GetETH — криптовалютная биржа на базе смарт-контракта Ethereum",
+      "casino": "GetETH — блокчейн-казино на смарт-контрактах Ethereum ",
+      "getcoin": "Getcoin игра | GetETH",
+      "getroll": "Getroll игра | GetETH",
+      "get2dice": "Get2dice игра | GetETH",
+      "getdice": "Getdice игра | GetETH",
+      "disclaimer": "Отказ от ответственности | GetETH",
+      "lottery": "Блокчейн лотерея на базе смарт-контракта | GetETH",
+      "faq": "Часто задаваемые вопросы | GetETH",
+      "risks": "Какие риски? | GetETH",
+      "warranties": "Гарантии участникам | GetETH",
+      "404": "Страница не найдена | GetETH"
+    }
+  },
+  "descriptions": {
+    "eng": {
+      "index": "GetETH is an investment medium-risk platform based on the Ethereum smart contract with an effective model of income distribution among all participants. ◾ The main objective of the platform is to receive passive income from the turnover of the casino and the referral program.",
+      "casino": "Smart Casino GetETH is a completely decentralized system that provides the fairest and transparent system for the casino industry, and also provides a low withdrawal commission. ◾  The GetETH site has implemented MD5 honesty control technology. ◾ Join Now!!",
+      "getcoin": "",
+      "getroll": "",
+      "get2dice": "",
+      "getdice": "",
+      "disclaimer": "",
+      "lottery": "",
+      "faq": "",
+      "risks": "",
+      "warranties": "",
+      "404": ""
+    },
+    "rus": {
+      "index": "GetETH – инвестиционная медиум-риск платформа на основе смарт-контракта Ethereum с эффективной моделью распределения доходов между всеми участниками. ◾ Основная задача площадки — получение пассивного дохода от оборота казино и биржи, а также от реферальной программы.",
+      "casino": "GetETH — казино на базе смарт-контракта Ethereum. ◾ Cмарт казино GetETH — полностью децентрализованная система, обеспечивающая максимально прозрачную систему для индустрии казино, а так же обеспечивает низкую комиссию при выводе выйгрыша. ◾ На площадке GetETH внедрена технология контроля честности MD5.",
+      "getcoin": "",
+      "getroll": "",
+      "get2dice": "",
+      "getdice": "",
+      "disclaimer": "",
+      "lottery": "",
+      "faq": "",
+      "risks": "",
+      "warranties": "",
+      "404": ""
+    }
+  }
+}

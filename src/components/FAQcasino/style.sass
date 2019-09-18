@@ -1,0 +1,38 @@
+.faq-container
+	padding: 40px 0
+	.button
+		text-align: left !important
+		z-index: 1
+		&:hover
+			box-shadow: 0 0 10px 1.5px #4512DE	
+		&:before
+			background: linear-gradient(to right, #270674, #4813E8)
+	.faq-item
+		margin-bottom: 12px
+		border-radius: 40px !important
+		text-transform: none
+		padding-right: 80px
+		@media only screen and (max-width: 768px)
+			padding: 10px 30px
+			padding-right: 50px
+			border-radius: 30px
+		.question-wrap
+			position: relative
+			.question
+				font-size: 20px
+				@media only screen and (max-width: 768px)
+					font-size: 18px
+			.toggle
+				font-size: 16px
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: -20px
+				transition: all .3s ease
+				&.active
+					transform: translateY(-50%) rotate(180deg) 
+		.answer
+			font-size: 15px
+			margin-top: 10px 
+			a
+				color: #FF336B	

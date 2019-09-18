@@ -1,0 +1,18 @@
+{
+  "eng": {
+    "lotery": "lottery",
+    "faq": "FAQ",
+    "exchange": "exchange",
+    "casino": "casino",
+    "risks": "what about risks?",
+    "guarantees": "warranties"
+  },
+  "rus": {
+    "lotery": "лотерея",
+    "faq": "FAQ",
+    "exchange": "биржа",
+    "casino": "казино",
+    "risks": "какие риски?",
+    "guarantees": "гарантии"
+  }
+}

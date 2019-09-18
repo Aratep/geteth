@@ -1,0 +1,20 @@
+{
+  "eng": {
+    "installMetamask": "Please install Metamask",
+    "metamaskFor": "Metamask extension for",
+    "useTrust": "Please install Trust Wallet",
+    "installTrust": "In order to use this app, please install Trust Wallet",
+    "trustFor": "Trust Wallet for",
+    "switchNet": "Please switch to Mainnet",
+    "unlock": "Please unlock your wallet"
+  },
+  "rus": {
+    "installMetamask": "Пожалуйста, установите Metamask",
+    "metamaskFor": "Расширение Metamask для",
+    "useTrust": "Скачайте Trust Wallet",
+    "installTrust": "Установите Trust Wallet чтобы использовать это приложение",
+    "trustFor": "Trust Wallet для",
+    "switchNet": "Пожалуйста, смените сеть на Mainnet",
+    "unlock": "Пожалуйста, разблокируйте ваш кошелек"
+  }
+}

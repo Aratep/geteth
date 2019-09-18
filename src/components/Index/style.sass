@@ -1,0 +1,88 @@
+.background.exchange
+	&:before
+		display: none
+
+	&:after
+		background: linear-gradient(#F8F8F8, #F8F8F8) !important
+
+body .index-page-container
+	font-weight: 400
+	color: #000
+
+	.full-description
+			font-size: 14px
+			a
+				text-decoration: underline
+				color: blue
+				font-weight: bold
+
+	& > .container
+		min-height: 800px
+
+	&:after
+		position: absolute
+		top: -400px
+		bottom: 0
+		left: 0
+		right: 0
+		background-repeat: no-repeat
+		background-image: url('../../assets/background1.png')
+		content: ""
+		z-index: -2
+
+	.button
+		z-index: 1
+
+	.notif-card
+		font-size: 13px
+		color: #ff7a00
+		text-decoration: underline
+
+	.txs_btn
+		width: 100%
+		//padding: 12px
+		border-radius: 20px
+
+	.header-container
+		.exchange-games-toggler .nav
+			color: white !important
+
+			&.active
+				color: #ff336d !important
+
+		.language-wrap
+			color: white
+
+		.icon .text
+			color: #979797
+
+	footer
+		.title
+			color: #303DD8
+			font-weight: 700
+
+		.container
+			a
+				margin-top: 3px
+				font-size: 14px
+				color: black
+				font-weight: 500
+
+				&:hover, &:active
+					color: #4750DC
+
+			&:after
+				display: none
+
+		p
+			color: #000
+			font-weight: 400
+
+.ui-pnotify-container.brighttheme-info
+	background: rgba(#2cb8ee, .6)
+	padding: 10px 20px
+	border-radius: 10px
+
+	a
+		color: darkblue
+		text-decoration: underline

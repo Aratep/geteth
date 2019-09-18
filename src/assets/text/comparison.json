@@ -1,0 +1,30 @@
+{
+  "eng": {
+    "yes": "yes",
+    "no": "no",
+    "advantages": {
+      "buy": "Commission for the purchase of tokens",
+      "sell": "Commission for the sale of tokens",
+      "admin": "Administrator fees",
+      "audit": "Preliminary audit",
+      "instruction": "Investment Instructions",
+      "refProgramm": "Referral program",
+      "otherProductsIncome": "Yield from other products",
+      "minDeoposit": "The minimum deposit amount for participation in the referral program"
+    }
+  },
+  "rus": {
+    "yes": "есть",
+    "no": "нет",
+    "advantages": {
+      "buy": "Комиссия за покупку токенов",
+      "sell": "Комиссия за продажу токенов",
+      "admin": "Комиссии администраторов",
+      "audit": "Предварительный аудит",
+      "instruction": "Инструкция по инвестированию",
+      "refProgramm": "Реферальная программа",
+      "otherProductsIncome": "Доходность от других продуктов",
+      "minDeoposit": "Минимальный размер депозита для участия в реферальной программе"
+    }
+  }
+}

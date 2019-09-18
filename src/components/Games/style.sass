@@ -1,0 +1,383 @@
+.game-container
+	padding: 80px 0
+	padding-top: 0
+	transition: all 0.5s ease
+	position: relative
+	&.active
+		.metamask
+			display: block
+	.flying-form
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 60%
+		text-align: center
+		.button
+			margin: auto
+	.metamask 
+		display: none
+		position: fixed
+		width: 500px
+		height: 500px
+		right: -250px
+		top: -250px
+		padding: 50px
+		padding-right: 270px
+		padding-top: 300px
+		box-sizing: border-box
+		background: red
+		color: #fff
+		border-radius: 250px
+		z-index: 20
+		display: none
+	.game-name
+		margin-bottom: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		&-text
+			text-transform: uppercase
+			font-weight: 200
+			text-align: center
+			font-size: 28px
+			margin-left: 5px
+			position: relative
+			&:after
+				z-index: -1
+				position: absolute
+				bottom: 8px
+				left: -2%
+				width: 104%
+				height: 7px
+				background-color: #0300A3
+				content: ""
+		img 
+			height: 60px
+		.question
+			cursor: pointer
+			margin-left: 15px
+			width: 30px
+			height: 30px
+			border-radius: 10em
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #FF277D
+			box-shadow: 0 0 10px 1px #FF277D
+			font-size: 20px
+
+.values-container
+	width: 100%
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	.rheostat-container
+		width: 100%
+		margin-top: 30px
+		margin-bottom: 30px
+		position: relative
+		.DefaultProgressBar_progressBar
+			background-image: linear-gradient(to right, #FF1C8E, #FE5437) 
+			border-radius: 10em
+			height: 6px
+		.DefaultBackground 
+			background-color: #7E80B6
+			width: 100%
+			height: 8px
+			position: relative
+			border-width: 0px
+			border-radius: 10em
+		.DefaultHandle_handle__horizontal
+			margin-left: -12px
+			top: -10px
+			height: 30px
+			width: 30px
+			position: relative
+			overflow: hidden
+			
+			border: none
+			box-shadow: 0 0 10px 1.5px rgba(#000, .65)
+			border-radius: 10em	
+			&:before
+				z-index: 1
+				content: ""
+				left: -50%
+				top: -50%
+				width: 200% 
+				height: 200% 
+				position: absolute
+				background: linear-gradient( #FF1C8E, #FF5338)
+			&:after
+				display: none
+		.labels 
+			font-size: 20px
+			font-weight: 300
+			position: absolute
+			top: -35px
+			width: 100%
+			display: flex
+			justify-content: space-between
+			div 
+				width: 50px
+				&:nth-child(2)
+					text-align: right
+					margin-right: 0px
+	.description
+		width: 100%
+		font-size: 16px
+		color: #aaa
+		text-align: center
+		margin:
+			top: 20px
+			bottom: 20px
+		
+.bet-container
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	.buttons-container 
+		display: flex
+		width: 68%
+		margin-bottom: 10px
+		justify-content: center
+		button 
+			font-size: 12px
+			outline: none
+			border: none
+			background: #2E3192
+			color: #fff
+			padding: 8px 20px
+			margin: 0 5px
+			border-radius: 10em
+			font-weight: 300
+			transition: all .5s ease
+			&:hover
+				background-color: #F7054A
+
+	p 
+		color: #888
+		width: 100%
+		text-align: center
+	.bet
+		font-size: 35px
+		font-weight: 300
+		margin: 
+			top: 12px
+			bottom: 12px
+	.rheostat-container 
+		width: 60%
+		.DefaultProgressBar_progressBar
+			background-color: #ff2480
+			border-radius: 10em
+			height: 6px
+		.DefaultBackground 
+			background-color: #7E80B6
+			width: 100%
+			height: 8px
+			position: relative
+			border-width: 0px
+			border-radius: 10em
+		.DefaultHandle_handle__horizontal
+			margin-left: -12px
+			top: -10px
+			height: 30px
+			width: 30px
+			background: #FF3663
+			box-shadow: 0 0 10px 1.5px #F75E2D
+			border: none
+			border-radius: 10em	
+			&:after
+				display: none
+			&:before
+				display: none
+
+.metamask-container
+	.border
+		border-radius: 10px
+		border: 1px solid #999
+		padding: 10px 30px
+		width: 100%
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center	
+		flex-direction: column
+	.message 
+		text-align: center
+		margin-left: 10px
+		margin-top: 0px
+		font-weight: 200
+		font-size: 22px
+	.img-wrap 
+		width: 50px !important
+		img 
+			width: 100%
+	button 
+		z-index: 1
+		margin: 10px
+
+.game-container .statistics-container
+	margin-top: 40px
+	@media only screen and (min-width: 768px) 
+		margin-top: 0
+	@media only screen and (min-width: 1200px)
+		padding-right: 45px !important
+		padding-left: 45px !important
+
+.statistics-wrap
+	background-color: #0f074e
+	padding: 
+		top: 10px
+		bottom: 10px
+	/* width */
+	::-webkit-scrollbar 
+		width: 6px
+	/* Track */
+	::-webkit-scrollbar-track 
+		background: transparent
+	
+
+	/* Handle */
+	::-webkit-scrollbar-thumb 
+		background: #797F90
+		border-radius: 10em
+	.only-me
+		border: none
+		outline: none
+		padding: 0
+		margin: auto 0
+		background-color: transparent
+		color: #fff
+		text-decoration: underline
+		&.active
+			background-color: #aaaaaa
+	.statistics
+		height: 350px	
+		overflow: auto
+
+	.header
+		font-weight: 300
+		color: #888888
+		position: relative
+		margin-bottom: 10px
+		&:after
+			position: absolute
+			bottom: -7px
+			left: 0
+			width: 100%
+			height: 1px
+			background-color: #666
+			content: ""
+
+
+.game-info
+	width: 100%
+	margin-top: 12px
+	.player 
+		font-size: 14px
+		font-weight: 200
+		display: flex
+		flex: 1
+		align-items: center
+		min-width: 0
+		
+	.bet, .result 
+		display: flex
+		align-items: center
+	.bet-money, .result-money
+		width: 45px
+		
+	.bet-values 
+		width: calc(100% - 50px)
+		overflow: hidden
+		display: flex
+		color: #666
+		font-size: 14px
+		&.dice .img-wrap
+			margin-right: 3px
+			width: 13px
+			height: 13px
+
+	.result-values
+		display: flex
+		color: #666
+		font-size: 14px
+		.img-wrap 
+			img 
+				opacity: 0.3
+			&.win img
+				opacity: 1
+		&.etheroll
+			width: 20px
+		&.two-dice
+			.img-wrap
+				margin-left: 2px
+				width: 15px
+				height: 15px
+
+	
+
+	.bet-values.coin .img-wrap,
+	.result-values.coin .img-wrap,
+	.result-values.dice .img-wrap 
+		width: 25px
+		height: 25px
+	.bet img,	.result img 
+		width: 100%
+		height: 100%
+	.result-values
+		color: #999
+		margin-right: 10px
+		&.win
+			font-weight: bold
+			color: red
+	.jackpot 
+		font-weight: bold
+		color: green
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 14px
+	.player-address
+		max-width: calc(100% - 35px)
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		a 
+			max-width: 100%
+	.player-img-wrap 
+		height: 25px
+		width: 25px
+		margin-right: 5px
+	.wrap 
+		width: 1000px
+		display: flex
+	.player img 
+		width: 100%
+		height: 100%
+	.player-address 
+		display: inline-block
+
+.chance-container
+	width: 100%
+	.chance-item 
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		width: 100%
+		margin-top: 25px
+		div 
+			width: 100%
+			text-align: center
+	.title 
+		font-size: 25px
+		font-weight: 200
+	.description 
+		color: #00f6ff
+		font-size: 16px
+	.value 
+		margin: 10px 0
+		font-weight: 300
+		font-size: 45px
+	

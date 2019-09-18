@@ -1,0 +1,604 @@
+.content
+	&.blur
+		margin-top: 170px
+		@media only screen and (max-width: 995px)
+			margin-top: 252px
+		.button
+			pointer-events: none
+
+.index-page
+	.description-container
+		padding: 80px 0 20px
+		color: #ffffff
+
+		a
+			text-decoration: underline
+			white-space: nowrap
+
+		li
+			margin-bottom: 10px
+
+	.statistics-container
+		background-color: rgba(#2433D3, .9)
+		border-radius: 10px
+		margin-bottom: 100px
+		.controls
+			font-size: 14px
+			padding: 10px 0
+			width: 100%
+			display: flex
+			justify-content: center
+			.control
+				transition: all .3s ease
+				cursor: pointer
+				color: #ffffff
+				text-transform: uppercase
+				margin: 0 10px
+				padding:
+					left: 30px
+					right: 10px
+					top: 2px
+					bottom: 2px
+				position: relative
+				border-radius: 10em
+				&.active
+					background-color: #5965EE
+					&:after
+						opacity: 1
+						transform: translate(-50%, -50%) scale(1)
+
+				&:after
+					transition: all .2s ease
+					position: absolute
+					top: 50%
+					left: 14px
+					transform: translate(-50%, -50%) scale(0)
+					height: 10px
+					width: 10px
+					background-color: #FFFD48
+					border-radius: 100%
+					content: ""
+					opacity: 0
+				&:before
+					position: absolute
+					top: 50%
+					left: 5px
+					transform: translateY(-50%)
+					height: 18px
+					width: 18px
+					background-color: #2f4ab6
+					border-radius: 100%
+					content: ""
+		.statistics-item
+			flex: 1
+			height: 100%
+			padding: 20px 30px
+			padding-bottom: 0
+			display: flex
+			color: #ffffff
+			flex-direction: column
+			span.currency
+				margin-left: 10px
+				text-transform: uppercase
+			&-header
+		  font-size: 18px
+		  margin-bottom: 20px
+		  font-weight: bold
+			&-content
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: space-between
+				flex-grow: inherit
+			&.balance
+				&:after
+					position: absolute
+					right: 0
+					top: 0
+					height: 100%
+					width: 1px
+					background-color: #ffffff
+					content: ""
+					@media only screen and (max-width: 768px)
+						top: 100%
+						left: 20px
+						width: calc(100% - 40px)
+						height: 1px
+				.bet-balance
+					font-size: 28px
+					margin-bottom: 10px
+				.eth-balance
+					background-color: #5965EE
+					padding: 5px 10px
+					border-radius: 5px
+					margin-bottom: 10px
+				.token-price
+					font-weight: 400
+				.dollars
+					font-weight: 400
+					font-size: 28px
+			&.savings
+				&:after
+					position: absolute
+					right: 0
+					top: 0
+					height: 100%
+					width: 1px
+					background-color: #ffffff
+					content: ""
+					@media only screen and (max-width: 1200px)
+						display: none
+						width: 100%
+						height: 1px
+					@media only screen and (max-width: 768px)
+						display: block
+						top: 0
+						left: 20px
+						width: calc(100% - 40px)
+						height: 1px
+				.savings
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					flex: 1
+					.saving
+						margin-bottom: 5px
+						display: flex
+						flex-wrap: wrap
+						span
+							margin: 0 5px
+					hr
+						margin-top: 0
+						margin-bottom: 6px
+						border-bottom: 1px solid white
+						width: 100%
+				.buttons
+					margin-top: 10px
+					width: 100%
+					align-items: center
+					display: flex
+					justify-content: space-around
+					flex-wrap: wrap
+					.button
+						margin-top: 5px
+						text-align: center
+						padding: 7px 15px
+						font-size: 13px
+						font-weight: 300
+						box-shadow-color: #9C90FC
+						color: #000
+						font-weight: 400
+						&:hover
+							box-shadow: 0 0 10px .2px #F6D54D
+						&:before
+							background-image: linear-gradient(to right, #F6D54D, #FC8F0C)
+						&:nth-child(2)
+							color: #ffffff
+							width: 120px
+							height: 38px
+							font-size: 15.6px
+							display: flex
+							align-items: center
+							justify-content: center
+							&:hover
+								box-shadow: 0 0 10px .2px #F70CA0
+							&:before
+								background-image: linear-gradient(to right, #F70CA0, #F76B1C)
+			&.statistics
+				.statistics-for-period
+					margin-bottom: 5px
+					width: 100%
+					display: flex
+					justify-content: space-between
+					align-items: center
+					.value
+						font-weight: bold
+						color: yellow
+
+	.circled
+		border-radius: 10px
+
+	.graphs-container
+		margin-top: 20px
+		.graph-container
+			padding: 30px
+			margin-bottom: 40px
+			position: relative
+			overflow: hidden
+			color: #ffffff
+			canvas
+				width: 510px !important
+				height: 360px !important
+			@media only screen and (max-width: 991px)
+				padding: 20px 15px
+				.graph
+					height: 200px !important
+					canvas
+						width: 100% !important
+						height: 200px !important
+			&:before
+				top: -10px
+				left: -10px
+				width: calc(100% + 20px)
+				height: calc(100% + 20px)
+				position: absolute
+				content: ""
+				z-index: -1
+			&.green
+				box-shadow: 0 0 15px 1px #26CB98
+				&:before
+					background-image: linear-gradient(to right, #26CB98, #1EE782)
+			&.blue
+				box-shadow: 0 0 15px 1px #3851D2
+				&:before
+					background-image: linear-gradient(#3851D2, #2212C1)
+			.graph
+				width: 100%
+				height: 300px
+				margin: 20px -35px
+				background-color: transparent
+				padding: 0
+			.graph-title
+				font-weight: bold
+				font-size: 25px
+			.graph-description
+				text-align: center
+
+
+	input
+		transition: all .3s ease
+		width: 100%
+		background: transparent
+		border: 1px solid #C0C0C0
+		padding: 10px 20px
+		border-radius: 10em
+		font-size: 16px
+		outline: none
+		color: #000000
+
+	.buy-and-sell-container
+		.card
+			background-color: white
+			padding: 10px 17%
+			display: flex
+			flex-direction: column
+			box-shadow: 0 0 5px .2px rgba(#000, .3)
+			@media only screen and (max-width: 991px)
+				padding: 10px 20px
+			@media only screen and (max-width: 769px)
+				padding: 10px 10%
+			> *
+				margin-bottom: 10px
+			&-header
+				font-size: 24px
+				width: 100%
+				text-align: center
+				font-weight: bold
+			&.buy
+				.button
+					&:hover
+						box-shadow: 0 0 10px 1px #1CC738
+					&:before
+						background-image: linear-gradient(to right, #1CC738, #05F52C)
+			&.sell
+				.button
+					&:hover
+						box-shadow: 0 0 10px 1px #FF085E
+					&:before
+						background-image: linear-gradient(to right, #FF085E, #FF3416)
+			.first-input
+				position: relative
+				display: flex
+				flex-direction: column
+				.input-wrap
+					position: relative
+					overflow: hidden
+					border-radius: 10em
+					.currency
+						display: flex
+						align-items: center
+						color: #000
+						position: absolute
+						padding: 0 20px
+						right: 10px
+						border-radius: 10em
+						top: 1px
+						height: calc(100% - 2px)
+						&:before
+							position: absolute
+							top: 3px
+							left: 0
+							height: calc( 100% - 6px)
+							width: 1px
+							background-color: #c0c0c0
+							content: ""
+				.result
+					margin-right: 30px
+					text-align: right
+				.controls
+					margin-top: 5px
+					display: flex
+					justify-content: space-between
+					.control
+						cursor: pointer
+						padding: 2px 15px
+						background-color: #F0EDED
+						border-radius: 10em
+			.another-input
+				padding: 1px 20px
+				align-items: center
+				display: flex
+				border-radius: 10em
+				border: 1px solid #c0c0c0
+				justify-content: space-between
+				.label
+					flex: 2
+					@media only screen and (max-width: 1200px)
+						flex: 3
+					font-size: 14px
+					position: relative
+					&:after
+						position: absolute
+						right: 0
+						top: 0px
+						width: 1px
+						height: calc(100% - 0px)
+						background-color: #c0c0c0
+						content: ""
+				input
+					padding-left: 0
+					padding-right: 0
+					flex: 3
+					border: none
+					text-align: center
+					font-weight: bold
+	.referral-container
+		padding: 10px
+		margin-bottom: 40px
+		background-color: #ffffff
+		box-shadow: 0 0 5px .1px rgba(#000, .3)
+		.referral-part-wrap
+			padding: 10px 20px
+		p
+			font-weight: 400
+			font-size: 13px
+		.input-wrap
+			position: relative
+			input
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+			.not-available
+				font-size: 15px
+				padding: 10px 30px
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				i
+					margin-right: 10px
+		.ref-stuff
+			justify-content: center
+			display: flex
+			align-items: center
+			text-align: center
+			border: 1px solid #F8F8F8
+			padding: 10px
+			width: 100%
+			background-color: #F8F8F8
+			border-radius: 10em
+			i
+				margin-right: 7px
+
+	.details-container
+		.detail
+			color: #ffffff
+			height: calc(100% - 40px)
+			margin-bottom: 40px
+			@media only screen and (max-width: 575px)
+				margin-bottom: 20px
+			padding: 30px 30px
+			position: relative
+			overflow: hidden
+			z-index: 1
+			&:before
+				z-index: -1
+				top: -10px
+				left: -10px
+				width: calc(100% + 20px)
+				height: calc(100% + 20px)
+				position: absolute
+				content: ""
+				background-image: linear-gradient(#303DD8, #303DD8)
+			&-image
+				transform: scale(.7)
+				margin-left: -11px
+				margin-top: -11px
+				height: 64px
+				width: 64px
+			&-second-value
+				color: #00ff0a
+			&.price
+				.detail-image
+					background: url(../../assets/details/sprite.png) -94px -10px
+			&.coins
+				.detail-image
+					background: url(../../assets/details/sprite.png) -10px -94px
+			&.balance
+				.detail-image
+					background: url(../../assets/details/sprite.png) -10px -10px
+			&.transaction
+				.detail-image
+					background: url(../../assets/details/sprite.png) -94px -94px
+			&-name
+				text-transform: uppercase
+				font-weight: 400
+				margin-top: 15px
+				margin-bottom: 15px
+				span
+					margin-left: 10px
+					font-size: 13px
+			&-value
+				margin-bottom: 5px
+			&-second-value
+				font-size: 12px
+
+	.comparision-container
+		z-index: 1
+		overflow: hidden
+		background-color: #4750DC
+		overflow-x: auto
+		.scrollable
+			min-width: 930px
+			padding: 30px
+		.values-wrap
+			margin-top: 30px
+		.header
+			font-size: 18px
+			.cell
+				padding: 12px 0
+				color: #ffffff !important
+				&.geteth
+					background-image: linear-gradient(#FF4F3B, #FE1A82)
+					position: relative
+					&:before
+						z-index: 0
+						position: absolute
+						top: 100%
+						left: 0
+						background-image: linear-gradient(#6769EB, #4550DC)
+						height: 400px
+						width: 100%
+						content: ""
+			position: relative
+			&:before
+				position: absolute
+				top: 0
+				left: -15px
+				height: 100%
+				width: calc(100% + 30px)
+				content: ""
+				background-color: #100635
+		.cell
+			color: #ffffff
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			padding: 10px 0
+			&.not-centered
+				font-weight: bold
+				text-align: left
+				justify-content: flex-start
+			&.advantage
+				font-weight: bold
+				color: #A0FF00
+			&.disadvantage
+				color: #fff
+	.faq-container
+		color: #ffffff
+		margin-top: 50px
+		padding: 30px 0
+		background-color: #3B47DA
+		&-title
+			text-align: center
+			font-size: 30px
+			font-weight: 300
+		.faq
+			user-select: none
+			padding: 0 30px
+			position: relative
+			transition: all .3s ease
+			&.active
+				background-color: #100635
+				.question
+					color: #2cb8ee
+				.faq-toggle
+					color: #2cb8ee
+				.answer
+					display: block
+				i
+					transform: rotate(180deg)
+			&-toggle
+				cursor: pointer
+				padding: 5px 0
+				display: flex
+				justify-content: flex-
+				align-items: center
+				i
+					transition: all .3s ease
+					margin-right: 10px
+			.question
+				p
+					margin: 10px 0
+			.answer
+				color: #ffffff
+				transition: max-height 1s ease
+				overflow: hidden
+				display: none
+				padding: 0 25px
+				padding-bottom: 15px
+				p
+					margin: 0
+			&:first-child
+				&:before
+					position: absolute
+					top: 0
+					left: 30px
+					width: calc(100% - 60px)
+					height: 1px
+					background-color: #fff
+					content: ""
+			&:after
+				position: absolute
+				bottom: 0
+				left: 30px
+				width: calc(100% - 60px)
+				height: 1px
+				background-color: #fff
+				content: ""
+
+	.tx-table
+		width: 100%
+
+		td
+			text-align: center
+
+		.tx-link a
+			color: blue
+
+	.txs_btn
+		outline: none
+		border: 0
+		background-color: #303DD8
+		color: #fff
+		padding: 8px
+		font-size: 20px
+
+	.instruction
+		text-decoration: underline
+
+	.instruction
+		font-weight: bold
+
+	.wallets-warning
+		color: #ff7a00
+		font-size: 13px
+		font-weight: bold
+		padding: 20px
+		text-align: center
+		width: 100%
+
+	.notif-card
+		text-align: center
+
+		a
+			color: blue
+
+	.card-instruction
+		text-align: center
+		text-decoration: none
+		color: black
+

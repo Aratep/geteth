@@ -1,0 +1,28 @@
+{
+    "eng": {
+        "whitelistTitle": "VIP list",
+        "launchText": "exchange will start working in",
+        "month": "March",
+        "addButton": "Get to GetETH VIP list",
+        "sendButton": "Be  the first",
+        "messages": {
+            "serverError": "server error",
+            "notFilled": "Fill at least one field with contacts correctly",
+            "success": ["Thank you, ", ". You are added to waitlist"],
+            "emailExists": "this email already exists"
+        }
+    },
+    "rus": {
+        "whitelistTitle": "VIP list",
+        "launchText": "биржа заработает в",
+        "month": "Марте",
+        "addButton": "Попасть в VIP list",
+        "sendButton": "Узнать раньше всех",
+        "messages": {
+            "serverError": "ошибка сервера",
+            "notFilled": "Заполните минимум  1 поле с контактами корректно",
+            "success": ["Спасибо, ", ". Вы добавлены в waitlist"],
+            "emailExists": "этот email уже существует"
+        }
+    }
+}

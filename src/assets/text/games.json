@@ -1,0 +1,64 @@
+{
+  "eng": {
+    "playButton": "Play",
+    "coin": {
+      "name": "GETCOIN",
+      "introText": "Heads or tails? 50/50",
+      "betText": "Winning bet pays",
+      "valuesDescription": "Choose coin side to bet on",
+      "description": "<h1>How to play GETCOIN?</h1> <p>Nobody cares</p>"
+    },
+    "dice": {
+      "name": "GETDICE",
+      "introText": "Bet on numbers, 1 to 6",
+      "betText": "Winning bet pays up to",
+      "valuesDescription": "Choose the dice number(s) to bet on",
+      "description": "<h1>How to play GETDICE?</h1> <p>Nobody cares</p>"
+    },
+    "two-dice": {
+      "name": "GET2DICE",
+      "introText": "Bet om sum, 2 to 12",
+      "betText": "Winning bet pays up to",
+      "valuesDescription": "Choose sum of dice to bet on",
+      "description": "<h1>How to play GET2DICE?</h1> <p>Nobody cares</p>"
+    },
+    "etheroll": {
+      "name": "GETROLL",
+      "introText": "ANY win chance, 1 % to 94 %",
+      "betText": "Winning bet pays up to",
+      "valuesDescription": "Adjust you win chance",
+      "description": "<h1>How to play GETROLL)?</h1> <p>Nobody cares</p>"
+    }
+  },
+  "rus": {
+    "playButton": "Играть",
+    "coin": {
+      "name": "GETCOIN",
+      "introText": "50 / 50",
+      "betText": "Выигрыш",
+      "valuesDescription": "Орел или решка?",
+      "description": "<h1>How to play GETROLL)?</h1> <p>Nobody cares</p>"
+    },
+    "dice": {
+      "name": "GETDICE",
+      "introText": "Ставки на грань, от 1 до 6",
+      "betText": "Выигрыш до",
+      "valuesDescription": "Выберите число или числа",
+      "description": "<h1>How to play GETROLL)?</h1> <p>Nobody cares</p>"
+    },
+    "two-dice": {
+      "name": "GET2DICE",
+      "introText": "Ставки на сумму, от 2 до 12",
+      "betText": "Выигрыш до",
+      "valuesDescription": "Выберите сумму чисел",
+      "description": "<h1>How to play GETROLL)?</h1> <p>Nobody cares</p>"
+    },
+    "etheroll": {
+      "name": "GETROLL",
+      "introText": "Любые шансы, от 1% до 97%",
+      "betText": "Выигрыш до",
+      "valuesDescription": "Выберите любой процент",
+      "description": "<h1>How to play GETROLL)?</h1> <p>Nobody cares</p>"
+    }
+  }
+}

@@ -1,0 +1,452 @@
+.box
+	width: 100%
+	background-color: #1F0256
+	padding: 15px
+	border-radius: 10px
+	overflow: hidden
+	.game-container
+		padding: 20px
+		@media only screen and (max-width: 576px)
+			padding: 0
+	.currencies
+		display: flex
+		justify-content: space-between
+		position: relative
+		&:before
+			position: absolute
+			content: ""
+			width: calc(100% - 10px)
+			height: 1px
+			background-color: #7A7CB1
+			top: 0px
+			left: 5px
+			z-index: 0
+		.currency
+			z-index: 1
+			padding: 7px 20px
+			border-radius: 5px
+			display: flex
+			align-items: center
+			background-color: #3D1888
+			position: relative
+			&:after
+				opacity: 0
+				text-align: center
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				border-radius:  5px
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				line-height: 1
+				font-size: 14px
+				content: "coming soon"
+				background-color: #3d1888
+				transition: all .2s ease
+			&.disabled
+				&:hover
+					&:after
+						opacity: 1
+
+			&-text
+				text-transform: uppercase
+				margin-left: 10px
+			&-img
+				height: 30px
+			&.active
+				background-color: #f00
+	.circled
+		height: 55px
+		margin-top: 20px
+		flex-direction: row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-radius: 10px
+		background-color: #5B2DB7
+		position: relative
+		.currency-img
+			height: 35px
+		.label
+			position: absolute
+			top: -23px
+			font-size: 14px
+			text-transform: uppercase
+			left: 0
+
+	.bet-container
+		text-transform: uppercase
+		margin-top: 35px
+		@media only screen and (max-width: 576px)
+			flex-direction: column
+			height: auto
+			justify-content: space-between
+		.input-wrap
+			padding: 0 15px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			@media only screen and (max-width: 576px)
+				position: relative
+				height: 55px
+				&:after
+					position: absolute
+					bottom: 0px
+					left: 0
+					width: 100%
+					height: 1px
+					background-color: #ffffff
+					content: ""
+			input
+				font-family: "gotham"
+				width: 100%
+				outline: none
+				border: none
+				background-color: transparent
+				color: #ffffff
+				font-size: 25px
+				line-height: 1
+				font-weight: bold
+				letter-spacing: 1.2px
+				text-align: center
+				width: 90px
+		.controls
+			display: flex
+			justify-content: space-between
+			@media only screen and (max-width: 576px)
+				height: 40px				
+			.control
+				text-transform: uppercase
+				cursor: pointer
+				width: 100%
+				text-align: center
+				position: relative
+				padding: 5px 0
+				font-weight: bold
+				@media only screen and (max-width: 576px)
+					&:first-child
+						&:before
+							display: none
+				&:before
+					position: absolute
+					left: 0
+					top: 0
+					height: 100%
+					width: 1px
+					background-color: #ffffff
+					content: ""
+					
+	.payout
+		margin-top: 35px
+		padding: 15px 
+		text-transform: uppercase
+		position: relative
+		&-money
+			line-height: 1
+			text-align: center
+			font-weight: bold
+			font-size: 25px
+		.details
+			font-size: 12px
+			position: absolute
+			opacity: 0
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: #5B2DB7
+			border-radius: 10px
+			z-index: 10
+			display: flex
+			flex-direction: column
+			align-items:center
+			justify-content: center
+			text-align: center
+			transition: all .2s ease
+			span
+				color: #0AD0F1
+				font-size: 14px
+		&:hover
+			.details
+				opacity: 1
+	.coefficients
+		padding: 80px 0
+		.coefficient-item
+			padding: 20px 0
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			position: relative
+			&-key
+				text-transform: uppercase
+			&-value
+				font-weight: bold
+				font-size: 45px
+				@media only screen and (max-width: 576px)
+					font-size: 32px
+			&:first-child
+				&:before
+					display: none
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				height: 100%
+				width: 1px
+				background-color: #ffffff
+				content: ""
+	.values-container
+		
+		margin-top: 20px
+		width: 100%
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		position: relative
+		&.coin-container
+			.description
+				top: 0
+				left: 0
+				position: absolute
+				@media only screen and (max-width: 768px)
+					display: none
+			&:before
+				position: absolute
+				top: 50%
+				left: 0
+				width: 100%
+				height: 5px
+				border-radius: 10em
+				background: linear-gradient(to right, #6732F5, #0FE3FE)
+				content: ""
+			.coin
+				text-transform: uppercase
+				width: 90px
+				height: 90px
+				border-radius: 10em
+				background: linear-gradient(#6733F5, #23BAFC)
+				box-shadow: 0 0 10px 1.5px rgba(#000, .65)			 
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 18px
+		.description
+			color: #ffffff
+			text-align: left
+	.metamask-container
+		margin-top: 20px
+		.button-and-balance
+			width: 100%
+			display: flex
+			justify-content: space-between
+			position: relative
+			height: 62px
+			@media only screen and (max-width: 768px)
+				margin-top: 90px
+			.button
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				position: absolute
+				font-size: 20px
+				padding: 20px 50px
+				margin: 0
+				@media only screen and (max-width: 768px)
+					top: 0%
+					transform: translate(-50%, -70px)					 
+			.balance
+				display: flex
+				align-items: center
+				.question
+					cursor: pointer
+					width: 25px
+					height: 25px
+					border-radius: 10em
+					display: flex
+					justify-content: center
+					align-items: center
+					background-color: #E63B7A
+					font-size: 14px
+					margin-right: 5px
+				.currency-img-wrap
+					border-radius: 10em
+					width: 30px
+					height: 30px
+					display: flex
+					justify-content: center
+					align-items: center
+					background-color: #5B2DB7
+					.currency-img
+						width: 23px
+				.currency-text
+					text-transform: uppercase
+				&-value
+					color: #ff0000
+					margin: 0 5px
+					@media only screen and (max-width: 500px)
+						margin: 0 10px
+	.statistics
+		.controls
+			display: flex
+			justify-content: space-between
+			position: relative
+			&:after
+				position: absolute
+				bottom: -11px
+				left: 0
+				width: 100%
+				height: 1px
+				background-color: #ffffff
+				content: ""
+			.control
+				cursor: pointer
+				color: #999999
+				text-transform: uppercase
+				font-size: 20px
+				padding: 10px
+				padding-top: 20px
+				width: 100%
+				text-align: center
+				position: relative
+				font-weight: 400
+				&.active
+					color: #ffffff
+					font-weight: bold
+					&:after
+						position: absolute
+						bottom: -10px
+						left: 0
+						width: 100%
+						height: 5px
+						content: ""
+						background-color: #fff
+		.table-wrap
+			overflow: auto
+			.table
+				min-width: 550px
+				width: 100%
+		.game-info
+			padding: 0px
+			display: flex
+			align-items: center
+			background-color: #ffffff
+			margin: 0
+			background-color: #251B4C
+			&:nth-child(2n)
+				background-color: #1E1442
+			.payout
+				margin-top: 0
+				position: relative
+				.details
+					position: absolute
+					opacity: 0
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: #5B2DB7
+					z-index: 10
+					display: flex
+					flex-direction: column
+					align-items:center
+					justify-content: center
+					text-align: center
+				&:hover
+					.details
+						opacity: 1
+			.index
+				flex: 1
+			.player, .bet, .time, .roll-under, .payout
+				flex: 2
+			> div
+				display: block
+				text-align: center
+			.player
+				text-overflow: ellipsis
+				overflow: hidden
+				width: 90%
+				white-space: nowrap
+			&.header
+				margin-top: 10px
+				background-color: #100635
+				text-transform: capitalize
+		.content-wrap
+			max-height: 300px
+			overflow: auto
+
+.chances-container
+	justify-content: center
+	display: flex
+	flex-direction: column
+	.img-wrap
+		width: 80px
+		img
+			width: 100%
+	>div
+		padding-left: 20px
+		padding-right: 20px
+	.header
+		padding: 20px
+		font-size: 22px
+		font-weight: bold
+	.control
+		display: flex
+		justify-content: space-between
+		box-sizing: content-box
+		width: 60%
+		padding: 20px 20%
+		position: relative
+		@media only screen and (max-width: 450px)
+			width: 80%
+			padding: 20px 10%  
+		&:after, &:before
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: #fff
+			left: 0
+			content: ""
+		&:after
+			bottom: 0
+		&:before
+			top: 0
+		&-item
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			width: 35px
+			height: 35px
+			background-color: #5B2DB7
+			border-radius: 100%
+			transition: all .3s ease
+			cursor: pointer
+			&.active
+				background-color: #FF2F71
+	.table
+		overflow: auto
+		padding: 20px
+		> .row:not(.coin)
+			@media only screen and (max-width: 991px)
+				min-width: 991px
+		.keys
+			@media only screen and (max-width: 991px)
+				margin-right: 30px
+			.line
+				text-align: left
+				&:first-child
+					visibility: hidden
+		.line
+			padding: 0 3px
+			white-space: nowrap
+			text-align: center
+			&:first-child
+				color: #ff0000
+		.values.two-dice
+			.line
+				padding: 0

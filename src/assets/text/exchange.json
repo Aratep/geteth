@@ -1,0 +1,64 @@
+{
+  "eng": {
+    "h1": "JOIN A RELIABLE INVEST PROJECT",
+    "bullshit": [
+      "Unlimited income in your deposit",
+      "The participation in the project is completely",
+      "Funds are distributed by the smart contract without any interference of developers",
+      "Referral program and large bonusess"
+    ],
+    "signup": "Sign up to VIP List",
+    "people": ["People", "in line"],
+    "p": [
+      "Only those who enters the project before anyone else can get in investment projects on smart contracts with the greatest profit.",
+      "Sign up to VIP list to be the first to know about the smart-contract’s opening date and get the instructions",
+      "Input email or telegram"
+    ],
+    "flying": {
+      "ty": "Thank you for participating!",
+      "turnon": "Turn on browser notifications and check your email and Telegram!"
+    },
+    "agree": [
+      "I agree to receive newsletters.",
+      "I agree with",
+      "Terms and Conditions and Privacy Policy."
+    ],
+    "graph": {
+      "statistics": "Statistics of your income",
+      "select": "Select your deposit amount",
+      "title": "Graph of income",
+      "days": "days"
+    }
+  },
+  "rus": {
+    "h1": "СТАНЬ УЧАСТНИКОМ НАДЕЖНОГО ИНВЕСТ ПРОЕКТА",
+    "bullshit": [
+      "Неограниченный доход на Ваш депозит",
+      "Участие в проекте полностью анонимно",
+      "Средства распределяются смарт-конрактом без вмешательства разработчиков",
+      "Реферальная программа и большие бонусы"
+    ],
+    "signup": "Запись в VIP List",
+    "people": ["Людей", "в очереди"],
+    "p": [
+      "В инвестиционных проектах на смарт-контрактах с наибольшим профитом оказывается тот, кто раньше всех вошел в проект.",
+      "Запишись в VIP , чтобы раньше всех узнать о времени открытия смарт-контракта и получи инструкцию.",
+      "Введите свой e-mail или telegram"
+    ],
+    "flying": {
+      "ty": "Поздравляем! Теперь вы в списке первых, кто узнает о дате и времени открытия смарт-контракта",
+      "turnon": "Разрешите присылать вам уведомления, проверяйте почту и Telegram!"
+    },
+    "agree": [
+      "Я согласен на получение новостных рассылок.",
+      "Я согласен с",
+      "условиями и политикой конфиденциальности."
+    ],
+    "graph": {
+      "statistics": "Статистика вашей чистой прибыли",
+      "select": "Выберите сумму депозита",
+      "title": "График доходности",
+      "days": "дней"
+    }
+  }
+}

@@ -1,0 +1,361 @@
+.header-container
+	z-index: 20
+	padding: 15px 0
+	@media only screen and (max-width: 990px)
+		padding: 2px 0
+	transition: all .3s ease
+	&.active
+		background-color: rgba(#2A0372, 0.9)
+	&.is-opened
+		.mobile
+			visibility: visible
+			opacity: 1
+	.logo
+		height: 67px
+		margin-bottom: -3px
+		img
+			height: 100%
+	.launch
+		.launch-wrap
+			text-align: center
+			align-items: center
+			flex-direction: column
+			justify-content: center
+			line-height: 1.1
+			.launch-text
+				font-size: 10px
+				text-align: center
+				width: 175px
+			.launch-timer
+				margin-left: 5px
+				font-size: 35px
+	.exchange-games-toggler
+		margin: 
+			left: 30px
+			right: 30px
+	.menu
+		margin: 
+			left: 0px
+			right: 0px
+		@media only screen and (max-width: 1200px)
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			text-align: center
+			margin: 
+				top: 10px
+				bottom: 10px
+			a
+				margin-left: 0 !important
+				margin-right: 0 !important
+				font-size: 25px
+		a 
+			text-transform: uppercase
+			color: #fff
+			outline: none
+			cursor: pointer
+			text-decoration: none
+			margin: 0 15px
+			border-radius: 10em
+			transition: all 0.3s ease
+			position: relative
+			&:after
+				transform: translateY(10px)
+				opacity: 0
+				position: absolute
+				bottom: 0
+				left: -1%
+				width: 102%
+				height: 2px
+				background-color: #FF336B
+				content: ""
+				transition: all .3s ease
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+			&:hover
+				&:after
+					transform: translateY(0)
+					opacity: 1
+
+
+				
+			@media only screen and (max-width: 990px)
+				font-size: 20px
+
+	.socials-container
+		padding: 15px
+		flex-direction: row
+		justify-content: center
+		&.fixed
+			z-index: 9	
+			position: fixed
+			top: 50%
+			right: 0
+			flex-direction: column
+			transform: translateY(-50%)
+			.icon
+				margin: 
+					top: 12px
+					bottom: 12px
+					left: 0
+					right: 0
+			.social-wrap
+				width: 30px
+				height: 30px
+				&.short
+					width: 25px
+					height: 25px
+		.theme-toggler
+			margin-top: 10px
+			position: relative
+			&.light
+				.theme-toggler-circle
+					transform: translateY(18px)
+			&-pipe
+				height: 40px
+				width: 20px
+				background-color: #B0DCE9
+				border-radius: 10em
+			&-circle
+				transition: all .3s ease
+				position: absolute
+				top: 2px
+				left: 2px
+				width: 16px
+				height: 16px
+				border-radius: 10em
+				background-color: #FFFFFF
+				box-shadow: 0 0 5px .1px rgba(#000, .3)
+
+	.mobile-container
+		.icon		
+			margin: 0 5px	
+			font-size: 10px
+			&:last-child
+				margin-left: 20px
+	.social-wrap
+		background-repeat: no-repeat
+		width: 25px
+		height: 25px
+		margin-left: 10px
+		margin-right: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-size: contain
+		background-position: center
+		z-index: 30
+		padding: 
+			left: 10px
+			right: 10px
+	.icon
+		z-index: 100
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: flex-start
+		
+		&:hover
+			.text
+				opacity: 1
+				max-height: 20px
+		.text
+			opacity: 0
+			transition: all .3s ease
+			max-height: 0
+		i
+			font-size: 30px
+		
+	.exchange-games-toggler
+		display: flex
+		align-items: center
+		.nav
+			font-size: 16px
+			text-transform: uppercase
+			color: #fff
+			&.active
+				color: #FF336D
+		.circle-container
+			margin: 0 5px
+			position: relative
+			background-color: #ffffff
+			width: 34px
+			height: 19px
+			border-radius: 10em
+			.circle
+				margin: 
+					top: 2px
+					left: 2px
+				width: 25px
+				height: 25px
+				border-radius: 10em
+				background-color: #FF336B
+				box-shadow: 0 0 10px 1.5px #F75E2D
+				transition: all .3s ease
+				transform: translate(-5px, -5px)
+				&.exchange
+					transform: translate(10px, -5px)
+	.mobile 
+		background: rgba(#0D0123, .8)
+		visibility: hidden
+		opacity: 0
+		transition: all 0.4s ease
+		z-index: 9
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100vh
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		.language-trigger
+			margin-top: 10px
+		.exchange-games-toggler
+
+			margin-top: 20px 
+		.launch > div > button
+			margin-left: 0
+		.socials-container
+			z-index: 0
+.launch
+	display: flex
+	justify-content: center
+	align-items: center
+	> div > .button
+		padding: 10px 20px
+		font-size: 14px
+		line-height: 1.1
+	.button
+		text-transform: none
+		display: block
+		font-size: 16px
+		margin-left: 20px
+		padding-left: 20px
+		padding-right: 20px
+		z-index: 0	
+	.launch-wrap
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.launch-text
+		text-transform: uppercase
+		font-size: 15px
+		font-weight: 300
+		color: #00F6FF
+	.launch-timer
+		color: #00f6ff
+		font-size: 20px
+	form
+		border-radius: 7px
+		box-shadow: 0 0 20px .2px #14217A
+		transform: translate(-3000px, -50%)
+		transition: all .3s ease
+		&.visible
+			transform: translate(-50%, -50%)
+		z-index: 20
+		background-color: #4D01DC
+		position: fixed
+		top: 50%
+		left: 50%
+		display: flex
+		flex-direction: column
+		padding: 30px
+		width: 400px
+		@media only screen and (max-width: 430px)
+			width: calc(100% - 30px)
+			padding: 
+				left: 10px
+				right: 10px
+		.title
+			text-align: center
+			text-transform: uppercase
+			font-weight: 300
+			font-size: 22px
+			margin-bottom: 10px
+		.close
+			cursor: pointer
+			position: absolute
+			right: -10px
+			top: -10px
+			width: 20px
+			height: 20px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 10em
+			border: 1px solid #fff
+		button
+			margin: auto
+			border: none
+			border-radius: 10em
+			padding: 10px 30px
+			background: linear-gradient(to right, #FE018C, #F7054A)
+			color: #fff
+			margin-top: 10px
+			&.disabled
+				opacity: .3
+		.message
+			text-align: center
+			font-style: italic
+			margin-top: 10px
+			font-weight: 300
+			font-size: 14px
+		input
+			width: 100%
+			padding: 8px 20px
+			font-size: 16px
+			border: none
+			border-bottom: 1px solid #ffffff
+			color: #ffffff
+			background: none
+			margin-bottom: 10px
+			outline: none
+			&.red
+				border-bottom: 1px solid red
+			&::placeholder
+				font-weight: 300
+				color: #aaa
+
+.language-wrap
+	position: relative
+	.language-list
+		z-index: 100
+		border-radius: 5px
+		overflow: hidden
+		background-color: rgba(#2A365A, .7)
+		display: none
+		position: absolute
+		top: 35px
+		left: -10px
+		&.active
+			display: block
+		.language-list-item
+			padding: 10px
+			width: 100%
+			&:hover
+				background-color: #000
+			&:first-child
+				margin-top: 0
+	.language-list-item
+		cursor: pointer
+		display: flex
+		align-items: center
+		flex-direction: row-reverse
+		&-img
+			width: 25px
+		&-text
+			font-size: 15px
+			text-transform: uppercase
+			margin-right: 10px
+
+.language-ontop .language-wrap
+	position: absolute
+	top: 20px
+	left: 20px
+

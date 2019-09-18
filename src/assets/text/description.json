@@ -1,0 +1,46 @@
+{
+  "eng": {
+    "h2": "People’s Casino",
+    "p": [
+      "100% anonymous, without registration and deposits",
+      "Instant payment guarantee",
+      "Open Winning Algorithm",
+      "Verified smart contract",
+      "Drawing every day",
+      "New extremely gainful projects every month!",
+      "GetETH medium-risk crypto exchange.",
+      "Receive passive income from the casino and exchange turnover!",
+      "Spring project"
+    ],
+    "exchange": "exchange will start working in",
+    "statistics": {
+      "wagers": "24h wagers",
+      "bets": "bets",
+      "recentJackpot": "Recent jackpot",
+      "wonBy": "Won by",
+      "topWinners": "24h top winners"
+    }
+  },
+  "rus": {
+    "h2": "People’s Casino",
+    "p": [
+      "100% анонимно, без регистрации и депозитов",
+      "Гарантия моментальных выплат",
+      "Открытый алгоритм выигрыша",
+      "Проверенный смарт-контракт",
+      "Розыгрыш каждый день",
+      "Спецпроекты на жарком профите каждый месяц!",
+      "GetETH среднерисковая крипто биржа",
+      "Получай пассивный доход от оборота казино и биржи!",
+      "Проект весны"
+    ],
+    "exchange": "Лоттерея начнется через",
+    "statistics": {
+      "wagers": "Cтавки за сутки",
+      "bets": "ставок",
+      "recentJackpot": "Последняя лотерея",
+      "wonBy": "Выиграна",
+      "topWinners": "Топ выигрышей за сутки"
+    }
+  }
+}
